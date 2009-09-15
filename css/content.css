@@ -4,9 +4,7 @@ body{font-family:"Myriad Pro","Segoe UI",Helvetica, Arial, sans-serif;}
 h1, h2, h3, h4, h5, h6, ul, ol,dl, p,blockquote {padding:10px;}
 h1, h2, h3, h4, h5, h6,img{padding-bottom:0px;}
 pre{margin: 10px;}
-table h1,table h2,table h3, table h4, table h5, table h6, table p, table ul, table ol, table dl,
-ul h1,ul h2,ul h3, ul h4, ul h5, ul h6, ul p, ul ul, ul ol, ul dl,
-ol h1,ol h2,ol h3, ol h4, ol h5, ol h6, ol p, ol ul, ol ol, ol dl {padding:0;}
+table h1,table h2,table h3, table h4, table h5, table h6, table p, table ul, table ol, table dl{padding:0;}
 /* ====== Elements ====== */
 img{display:block;}
 em{font-style: italic;}
@@ -65,3 +63,10 @@ cite{display:block; text-align:right; padding-top: 10px;}
 1. find a way to capture the width of the caption in the width of the image or flash
 2. Set some default widths, mby use flickr widths?
 */
+/* ====== media ====== */
+.media{overflow:hidden; overflow:visible; zoom:1;margin:10px;}
+.media .img{float:left;margin-right: 10px;}
+.media .img img{display:block;}
+.media .imgExt{float:right; margin-left: 10px;}
+/* ====== special formatting classes ====== */
+.detail{color: #777; font-size:11px;display:block;}
