@@ -1,12 +1,7 @@
-.line
+.line, .lastUnit
+  overflow: hidden
+  _overflow: visible
   _zoom: 1
-
-  &:after
-    content: "."
-    display: block
-    height: 0
-    clear: both
-    visibility: hidden
 
 
 .unit
@@ -62,8 +57,6 @@
 
 
 .lastUnit
-  display: table-cell
-  _display: block
   float: none
   _position: relative
   _left: -3px
