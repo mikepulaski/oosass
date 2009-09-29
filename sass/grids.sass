@@ -1,7 +1,22 @@
-.line, .lastUnit
-  overflow: hidden
-  _overflow: visible
-  _zoom: 1
+.line:after
+  content: "."
+  display: block
+  height: 0
+  clear: both
+  visibility: hidden
+
+
+.lastUnit:after
+  content: " . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+  visibility: hidden
+  clear: both
+  height: 0 !important
+  display: block
+  line-height: 0
+
+
+.line
+  *zoom: 1
 
 
 .unit
@@ -57,6 +72,9 @@
 
 
 .lastUnit
+  display: table-cell
+  *display: block
+  *zoom: 1
   float: none
   _position: relative
   _left: -3px
