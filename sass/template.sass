@@ -1,9 +1,23 @@
 body
 
-//.body
-//  overflow: hidden
-//  _overflow: visible
-//  _zoom: 1
+.body, .main
+  display: table-cell
+  *display: block
+  _position: relative
+  _left: -3px
+  _margin-right: -3px
+  width: auto
+  _zoom: 1
+
+
+.body:after, .main:after
+  content: " . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+  visibility: hidden
+  clear: both
+  height: 0 !important
+  display: block
+  line-height: 0
+  font-size: 36px
 
 
 .page
@@ -25,10 +39,6 @@ body
 
 
 .main
-  overflow: hidden
-  _overflow: visible
-  _zoom: 1
-
 
 .leftCol
   float: left
