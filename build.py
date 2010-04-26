@@ -11,5 +11,5 @@ for dirpath, dirnames, filenames in os.walk('.'):
         if ext != '.css': continue
         source = os.path.join(dirpath, filename)
         dest = os.path.join(dirpath, name + '.sass')
-        print 'css2sass %s > %s' % (source, dest)
-        os.system('css2sass %s > %s' % (source, dest))
+        print 'sass-convert %s %s' % (source, dest)
+        os.system('sass-convert %s %s' % (source, dest))
